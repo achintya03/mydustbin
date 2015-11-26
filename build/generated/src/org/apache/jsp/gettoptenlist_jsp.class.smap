@@ -1,0 +1,14 @@
+SMAP
+gettoptenlist_jsp.java
+JSP
+*S JSP
+*F
++ 0 gettoptenlist.jsp
+gettoptenlist.jsp
++ 1 footer.html
+footer.html
+*L
+1,45:49
+1#1,42:94
+45#0,5:135
+*E
