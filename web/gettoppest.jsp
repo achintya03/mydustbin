@@ -29,7 +29,7 @@
            if(!gtype.equals("bth"))
           ps=con.prepareStatement("select * from "+gtype+""+ear+" where rownum<= "+tbabes);
            else
-           ps=con.prepareStatement("select Given_name,amount from(select given_name,amount from MA"+ear+" union select Given_name,amount from FE"+ear+" order by amount desc)where rownum<="+tbabes);    
+           ps=con.prepareStatement("select GivenName,Amount from(select given_name,amount from MA"+ear+" union select Given_name,amount from FE"+ear+" order by amount desc)where rownum<="+tbabes);    
           rs=ps.executeQuery();
            
           %>
