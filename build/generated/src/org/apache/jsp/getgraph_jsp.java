@@ -1,4 +1,4 @@
-package org.apache.jsp;
+//package org.apache.jsp;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -76,20 +76,20 @@ public final class getgraph_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("       ");
 
          String name=request.getParameter("bname");
-         
+
          String yr=request.getParameter("year");
          String gen=request.getParameter("sex");
          int maxyr=2013;
          int yrs=Integer.parseInt(yr);
-            
+
          PreparedStatement ps=null;
          Connection con;
          ResultSet rs=null;
-     
+
          Class.forName("oracle.jdbc.driver.OracleDriver");
          con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","scott","tiger");
          out.println("<center><h2><i>Popularity of the "+name+" is</h2></center>");
-         
+
       out.write("\n");
       out.write("         <div id=\"myfirstchart\" style=\"height: 250px;\"></div>\n");
       out.write("         <script>\n");
@@ -115,12 +115,12 @@ public final class getgraph_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write(" },\n");
       out.write("         ");
 
-        
+
          yrs++;
          rs=null;
          }
- 
-        
+
+
       out.write("\n");
       out.write("  \n");
       out.write("   \n");
